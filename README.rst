@@ -26,8 +26,8 @@ a. red ones
 b. instants and sorceries
 c. ninth edition storm crows
 d. overpowered ones
-f. those owned by the emperor
-g. those not included in this classification
+e. those owned by the emperor
+f. those not included in this classification
 
 Before you play a system for arbitrating inconsistency and incompleteness should be agreed on. If you come up with solutions that work please fork this and send a pull request.
 
@@ -55,8 +55,8 @@ The parts of a turn are the same with the following exceptions:
 
 *draw phase* The draw phase is broken into two actions.
 
-    a. replenishes, adds cards from the shoe to his or pack until the pack contains 7 cards.
-    b. picks, chooses one card from his or her pack and adds it to his or her hand. He or she becomes the owner of that card.
+    a. replenishes, adds cards from the shoe to his or pack until the pack contains 7 cards. If the shoe is depleted nothing happens.
+    b. picks, chooses one card from his or her pack and adds it to his or her hand. He or she becomes the owner of that card. If there are no cards to pick all spells and effects currently on the stack are canceled; the current turn ends; The player who failed to pick loses one life.
 
 *pass step* 
     After the end step the player exchanges his or her pack for the pack in the passed pack zone.
@@ -70,11 +70,3 @@ ____________
   effects that would use a library use the shoe instead.
 *mulligan*
   if your pack contains 5 or more lands you may reveal it, exile it then replenish.
-
-Termination
-_____________
-
-* the game ends when all but one or fewer players has lost or at least one player has won.
-* if the shoe is depleted replenish effects are ignored.
-* if a player cannot pick a card all spells and effects currently on the stack are canceled and that player loses one life.
-* If after after all players have taken a turn the gamestate does not change due to any effects that prevented the gamestate from changing are ignored for the rest of the game.(because this game is going to terminate).

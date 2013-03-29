@@ -51,22 +51,14 @@ We replace the library with two additional zones, draw piles and the shoe. The z
 Game Play
 ______________
 
-The parts of a turn are the same with the following exceptions:
-
-*draw phase* The draw phase is broken into two actions.
+*drawing*
+    Each card drawn broken into two actions. The player:
 
     a. replenishes, adds cards from the shoe to his or pack until the pack contains 7 cards. If the shoe is depleted nothing happens.
     b. picks, chooses one card from his or her pack and adds it to his or her hand. He or she becomes the owner of that card. If there are no cards to pick all spells and effects currently on the stack are canceled; the current turn ends; The player who failed to pick loses one life.
 
-*pass step* 
-    After the end step the player exchanges his or her pack for the pack in the passed pack zone.
+*pass step*
+    In the end phase after the cleanup step the player exchanges his or her pack for the pack in the passed pack zone. No player receives priority during this step.
 
-Mechanics:
-____________
-
-*draw*
-  whenever you would draw a card, replenish your pack, then pick.
-*scry, fateseal, search, shuffle etc*
-  effects that would use a library use the shoe instead.
 *mulligan*
-  if your pack contains 5 or more lands you may reveal it, exile it then replenish.
+  If your pack contains 5 or more lands you may reveal it, exile it then replenish. This requires priority and goes on the stack.

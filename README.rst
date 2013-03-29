@@ -1,8 +1,9 @@
-Goal
+Goals
 ________
 
 * Immediate gratification.
 * Casual play.
+* As simple as possible.
 * A magic format played from a shared pool of cards.
 * Works with 2-5 players.
 * Most games finish in under an hour.

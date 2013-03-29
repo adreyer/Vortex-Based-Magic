@@ -1,29 +1,40 @@
 Goal
 ________
 
-To start with a shuffled pool of magic cards and allow 2-5 players to immediately start playing a limited format that will usually terminate in under an hour.
+* Immediate gratification.
+* Casual play.
+* A magic format played from a shared pool of cards.
+* Works with 2-5 players.
+* Most games finish in under an hour.
+* "Feels" like playing limited magic.
 
 Requirements
 _____________
 
-the game is played with a shuffled pool of cards containg spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land but we do not know the optimal makeup.
+The game is played with a shuffled pool of cards containg spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land but we do not know the optimal makeup.
 
+Classification of Cards
+________________________
 
-Zones
-_______
-
-We replace the library with two additional zones, draw piles and the shoe. The zones are the same as ordinary magic except as follows.
+All available cards are classified by the following sets for the purpose of this game.
 
 * red cards.
 * instants and sorceries.
 * those cards owned by the emperor.
 * those that are not included in this classification.
 
+Before you play a system for arbitrating inconsistency and incompleteness should be agreed on. If you come up with solutions that work please fork this and send a pull request.
+
+Zones
+_______
+
+We replace the library with two additional zones, draw piles and the shoe. The zones are the same as ordinary magic except as follows.
+
 *shoe*
-  starts the game containing the randomized pool of cards for that game. The size of the shoe is not defined.
+  starts the game containing the randomized pool of cards for that game. The size of the shoe is not defined. This takes the place of the Library for all purposes except drawing
 
 *draw piles(pack)*
-  each player and the passed draw pile is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will.
+  each player and the "passed draw pile" is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will.
 
 *passed draw pile*
   This is a draw pile that no player currently controls. It exists merely to keep the passing of cards atomic.

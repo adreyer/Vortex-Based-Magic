@@ -10,7 +10,7 @@ ________
 * A magic format played from a shared pool of cards.
 * Works with 2-5 players.
 * Most games finish in under an hour.
-* "Feels" like playing limited magic.
+* "Feels like" playing limited magic.
 
 Requirements
 _____________
@@ -37,7 +37,7 @@ _______
 We replace the library with two additional zones, draw piles and the shoe. The zones are the same as ordinary magic except as follows.
 
 *shoe*
-  starts the game containing the randomized pool of cards for that game. This takes the place of the Library for all purposes except drawing.
+  This is a shared zone for all players and starts the game containing the randomized pool of cards for that game. This takes the place of the Library for all purposes except drawing.
 
 *draw piles(pack)*
   each player and the "passed pack" is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will. When a player loses the pack they control at that point is removed from the game.

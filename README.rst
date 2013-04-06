@@ -15,7 +15,7 @@ ________
 Requirements
 _____________
 
-The game is played with a shuffled pool of cards containg spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land but we do not know the optimal makeup.
+The game is played with a shuffled pool of cards contaning spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land but we do not know the optimal makeup.
 
 Classification of Cards
 ________________________
@@ -37,12 +37,12 @@ _______
 We replace the library with two additional zones, draw piles and the shoe. The zones are the same as ordinary magic except as follows.
 
 *shoe*
-  starts the game containing the randomized pool of cards for that game. This takes the place of the Library for all purposes except drawing
+  starts the game containing the randomized pool of cards for that game. This takes the place of the Library for all purposes except drawing.
 
 *draw piles(pack)*
-  each player and the "passed pack" is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will.
+  each player and the "passed pack" is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will. When a player loses the pack they control at that point is removed from the game.
 
-*passed pack*
+*passed pack(vortex)*
   This is a draw pile that no player currently controls. It exists merely to keep the passing of cards atomic.
 
 *hand*

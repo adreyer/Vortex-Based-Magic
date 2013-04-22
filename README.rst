@@ -26,8 +26,9 @@ a. red ones
 b. instants and sorceries
 c. ninth edition storm crows
 d. overpowered ones
-e. those owned by the emperor
-f. those not included in this classification
+e. merfolk
+f. those owned by the emperor
+g. those not included in this classification
 
 Before you play a system for arbitrating inconsistency and incompleteness should be agreed on. If you come up with solutions that work please fork this and send a pull request.
 
@@ -46,7 +47,7 @@ We replace the library with two additional zones, draw piles and the shoe. The z
   This is a draw pile that no player currently controls. It exists merely to keep the passing of cards atomic.
 
 *hand*
-  a players hand starts with one of each the 5 basic lands.
+  a players hand is initially constructed by four rounds of drafting from passed packs and subsequently augmented by three chosen basic lands.
 
 Game Play
 ______________
@@ -61,4 +62,4 @@ ______________
     In the end phase after the cleanup step the player exchanges his or her pack for the pack in the passed pack zone. No player receives priority during this step.
 
 *mulligan*
-  If your pack contains 5 or more lands you may reveal it, exile it then replenish. This requires priority and goes on the stack.
+  If your pack contains 5 or more lands you may reveal it, exile it then replenish. This requires priority and goes on the stack. Mulligans may only be activated during the upkeep phase.

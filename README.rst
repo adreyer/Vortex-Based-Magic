@@ -62,4 +62,4 @@ ______________
     In the end phase after the cleanup step the player exchanges his or her pack for the pack in the passed pack zone. No player receives priority during this step.
 
 *mulligan*
-  If your pack contains 5 or more lands you may reveal it, exile it then replenish. This requires priority and goes on the stack. Mulligans may only be activated during the upkeep phase.
+  During a players upkeep if his or her pack contains 5 or more lands he or she may reveal it and exile all cards. That player only replenishes to 5 cards for the rest of that turn.

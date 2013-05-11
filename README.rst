@@ -15,7 +15,7 @@ ________
 Requirements
 _____________
 
-The game is played with a shuffled pool of cards contaning spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land but we do not know the optimal makeup.
+The game is played with a shuffled pool of cards contaning spells and land as well as one of each basic land per player. This is basically a cube or booster packs shuffled with basic land, but we do not know the optimal mana curve or land ratio.
 
 Classification of Cards
 ________________________
@@ -30,36 +30,36 @@ e. merfolk
 f. those owned by the emperor
 g. those not included in this classification
 
-Before you play a system for arbitrating inconsistency and incompleteness should be agreed on. If you come up with solutions that work please fork this and send a pull request.
+Before you play, a system for arbitrating inconsistency and incompleteness should be agreed on. If you come up with solutions that work, please fork this and send a pull request.
 
 Zones
 _______
 
-We replace the library with two additional zones, draw piles and the shoe. The zones are the same as ordinary magic except as follows.
+We replace the library with two additional types of zones: packs and the shoe. The zones function in the same way as ordinary zones in Magic, except as follows:
 
 *shoe*
-  This is a shared zone for all players and starts the game containing the randomized pool of cards for that game. This takes the place of the Library for all purposes except drawing.
+  The shoe is a hidden zone containing cards that are not owned or controlled by any player. At the beginning of the game, it contains all cards in the game. When any effect other than a draw effect would affect a player's library, it instead affects the shoe. The shoe must be kept in a single face-down pile. No player can look at or change the order of the shoe unless an effect causes him or her to do so.
 
-*draw piles(pack)*
-  each player and the "passed pack" is dealt a seven card draw pile to start the game. a player may look at his or her draw pile at will. When a player loses the pack they control at that point is removed from the game.
+*packs*
+  A pack is a zone containing cards temporarily owned by a single player. Additionally, a passed pack under no player's ownership resides in its own zone. At the beginning of the game, each player is dealt a pack of seven cards from the shoe, and the passed pack is dealt face-down. All packs are hidden zones. A player may arrange his or her pack in any convenient fashion and look at it as much as he or she wishes. A player can't look at the cards in another player's pack but may count those cards at any time. If a pack contains more than seven cards, then its owner randomly discards a card from that pack as a state-based action.
 
-*passed pack(vortex)*
-  This is a draw pile that no player currently controls. It exists merely to keep the passing of cards atomic.
+*passed pack*
+  The passed pack is a pack that no player currently owns. It exists to make passing of packs an atomic operation and to ensure that each player drafts from different packs on subsequent turns. The passed pack is a hidden zone contianing cards that are not owned or controlled by any player.
 
 *hand*
-  a players hand is initially constructed by four rounds of drafting from passed packs and subsequently augmented by three chosen basic lands.
+  A player's hand is initially assembled by four turns for each player, each turn consisting only of a draw step and a pass step. After these turns, each player adds three basic lands from outside the game to his or her hand. If a player would mulligan this hand, he or she instead does nothing. After each player has a hand of seven cards, play begins using normal turn structure.
 
 Game Play
 ______________
 
 *drawing*
-    Each card drawn broken into two actions. The player:
+    Whenever a rule or effect would cause a player to draw a card, that player instead drafts a card. Drafting consists of two steps: the replenish step and the pick step.
 
-    a. replenishes, adds cards from the shoe to his or pack until the pack contains 7 cards. If the shoe is depleted nothing happens.
-    b. picks, chooses one card from his or her pack and adds it to his or her hand. He or she becomes the owner of that card. If there are no cards to pick all spells and effects currently on the stack are canceled; the current turn ends; The player who failed to pick loses one life.
+    a. replenish: the player adds the top card of the shoe to his or her pack until the pack contains exactly seven cards. If the shoe contains no cards, nothing happens in this step.
+    b. pick: the player chooses one card from his or her pack and puts it in his or her hand. He or she becomes the owner of that card for the duration of the game. If there are no cards in his or her pack, all spells and effects currently on the stack are countered, the current turn ends immediately, and the player who failed to pick loses one life.
 
 *pass step*
-    In the end phase after the cleanup step the player exchanges his or her pack for the pack in the passed pack zone. No player receives priority during this step.
+    In the end phase, after the cleanup step the player exchanges his or her pack for the pack in the passed pack zone. At this time, he or she loses ownership of the previous pack and gains ownership of the new pack. This step occurs as a state-based action.
 
 *mulligan*
-  During a players upkeep if his or her pack contains 5 or more lands he or she may reveal it and exile all cards. That player only replenishes to 5 cards for the rest of that turn.
+  During a player's upkeep, if his or her pack contains five or more basic lands, he or she may reveal that pack and exile all cards it contains. Until the end of the turn, that player must replenish to exactly five cards instead of seven.

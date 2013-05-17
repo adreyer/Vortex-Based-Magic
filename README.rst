@@ -47,7 +47,7 @@ We replace the library with two additional types of zones: packs and the shoe. T
   The passed pack is a pack that no player currently owns. It exists to make passing of packs an atomic operation and to ensure that each player drafts from different packs on subsequent turns. The passed pack is a hidden zone contianing cards that are not owned or controlled by any player.
 
 *hand*
-  A player's hand is initially assembled by four turns for each player, each turn consisting only of a draw step and a pass step. After these turns, each player adds three basic lands from outside the game to his or her hand. If a player would mulligan this hand, he or she instead does nothing. After each player has a hand of seven cards, play begins using normal turn structure.
+  A player's opening hand is assembled by four turns for each player, each turn consisting only of a draw step and a pass step. After these turns, each player adds three basic lands from outside the game to his or her hand. If a player would mulligan this hand, he or she instead does nothing. After each player has a hand of seven cards, play begins using normal turn structure.
 
 Game Play
 ______________
